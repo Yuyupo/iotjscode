@@ -935,7 +935,6 @@ export default function App() {
 
       $('#backtraceRange').on('click', () => {
         if ($('#backtraceRange').is(':checked')) {
-
           $('#backtrace-scroll').scrollTop(0);
           surface.toggleButton(true, 'send-backtrace-button');
           $('#backtrace-min-depth').show();
@@ -948,7 +947,6 @@ export default function App() {
       });
 
       $('#send-backtrace-button').on('click', () => {
-
         let min_depth = $('#backtrace-min-depth').val();
         let max_depth = $('#backtrace-max-depth').val();
         let get_total = 1;
@@ -966,7 +964,6 @@ export default function App() {
         } else {
           Util.clearElement($('#backtrace-table-body'));
           $('#backtrace-scroll').scrollTop(0);
-
           debuggerObj.sendGetBacktrace(min_depth, max_depth, get_total);
         }
       });
