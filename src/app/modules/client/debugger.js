@@ -22,7 +22,7 @@ import { EventEmitter } from 'events';
 /**
  * Expected Debugger Protocol version.
  */
-export const JERRY_DEBUGGER_VERSION = 5;
+export const JERRY_DEBUGGER_VERSION = 8;
 
 /**
  * Packages sent between the server and the client.
